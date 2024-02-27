@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* task 1 */
+ul#categories {
+  max-width: 440px;
+  padding: 24px;
+  display: inline-flex;
+  flex-direction: column;
+gap: 24px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+}
+
+ul#categories ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+ .item {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  gap: 16px;
+
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+.item ul li {
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+} 
+
+
+/* Task 2 */
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+justify-content: center;
+}
+
+img {
+  width: 360px;
+  height: 300px;
+}
+
+/* Task 3 */
+#name-input {
+  width: 360px;
+  height: 40px;
+  margin: 32px 24px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 8px 16px;
+}
+
+#name-input::placeholder {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+h1 {
+  color: #2e2f42;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.96px;
+  margin: 0 24px 16px;
+}
+
+/* Task 4 */
+.login-form {
+  display: block;
+  margin: 32px 0 0 24px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+}
+
+button {
+  border-radius: 8px;
+  background: #4e75ff;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  width: 86px;
+  height: 40px;
+  border: none;
+  margin-top: 8px;
+}
+
+button:hover {
+  background: #6c8cff;
+}
+
+/* Task 5 */
+.change-color {
+  width: 148px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  margin: 16px 10px;
+}
+
+.widget {
+  margin: 40px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+/* Task 6 */
+
+#controls {
+  border-radius: 8px;
+  background: #f6f6fe;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 486px;
+  height: 104px;
+  margin: 36px 0 16px 24px;
+}
+
+#controls input {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #808080;
+}
+
+[data-create] {
+  width: 120px;
+  height: 40px;
+  margin-top: 0;
+}
+
+[data-destroy] {
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  margin-top: 0;
+}
+
+#boxes {
+  background: #f6f6fe;
+  max-width: 1000px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-left: 24px;
+  padding: 16px;
+}
